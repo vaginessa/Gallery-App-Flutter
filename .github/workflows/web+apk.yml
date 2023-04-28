@@ -52,11 +52,12 @@ steps:
     run: 'flutter pugrade'
     # Configure Flutter for macOS desktop.
   
-  
-  - name: 'Dart fuck'
-    uses: dart-lang/setup-dart@v1
-        with:
-          sdk: '2.13.0'
+    # gggg
+    # hhgg
+    - name: Set up Dart
+  uses: dart-lang/setup-dart@v1
+  with:
+    sdk: 2.7
           
   - name: 'Check Flutter environment'
     run: 'flutter doctor -v'
