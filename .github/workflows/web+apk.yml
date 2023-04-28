@@ -57,7 +57,7 @@ steps:
     - name: Set up Dart
   uses: dart-lang/setup-dart@v1
   with:
-    sdk: 2.7
+    sdk: 2.19.2
           
   - name: 'Check Flutter environment'
     run: 'flutter doctor -v'
