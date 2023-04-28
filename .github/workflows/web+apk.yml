@@ -49,8 +49,12 @@ steps:
 
   - name: 'Configure Flutter for macOS desktop'
     run: 'flutter config --enable-macos-desktop'
+    run: 'flutter pugrade'
     # Configure Flutter for macOS desktop.
 
+uses: dart-lang/setup-dart@v1
+        with:
+          sdk: '2.13.0'
   - name: 'Check Flutter environment'
     run: 'flutter doctor -v'
     # Check the Flutter environment.
